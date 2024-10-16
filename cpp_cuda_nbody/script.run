@@ -1,0 +1,11 @@
+#!/bin/bash
+#SBATCH --nodes=1
+#SBATCH --time=0:5:0
+#SBATCH --partition=gpu
+#SBATCH --gres=gpu:1
+#SBATCH --qos=gpu_free
+#SBATCH --account=math-454
+#SBATCH --reservation=Course-math-454-final
+
+#srun nvprof ./nbody-code examples/galaxy.txt 10 10
+srun nvprof ./nbody-code examples/very-small.txt 10 10

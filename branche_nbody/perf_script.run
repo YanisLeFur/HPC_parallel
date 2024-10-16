@@ -1,0 +1,7 @@
+#!/bin/bash
+#SBATCH --reservation=Course-math-454-final
+#SBATCH --account=math-454
+#SBATCH --time=00:10:00
+ulimit -l 127590
+perf record -o perf.data --call-graph dwarf ./nbody-code examples/galaxy.txt
+

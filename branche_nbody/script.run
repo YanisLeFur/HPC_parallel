@@ -1,0 +1,24 @@
+#!/bin/bash
+#SBATCH --reservation=Course-math-454-final
+#SBATCH --account=math-454
+#SBATCH --time=00:10:00
+ulimit -l 127590
+
+
+# srun nbody-code examples/galaxy_625.txt
+# srun nbody-code examples/galaxy_1250.txt
+# srun nbody-code examples/galaxy_2500.txt
+# srun nbody-code examples/galaxy_5000.txt
+# srun nbody-code examples/galaxy_10000.txt
+# srun nbody-code examples/galaxy_20000.txt
+# srun nbody-code examples/galaxy.txt
+
+
+#srun nbody-code examples/galaxy_964.txt
+#srun nbody-code examples/galaxy_1770.txt
+#srun nbody-code examples/galaxy_3273.txt
+#srun nbody-code examples/galaxy_6081.txt
+#srun nbody-code examples/galaxy_11349.txt
+#srun nbody-code examples/galaxy_21268.txt
+srun nbody-code examples/galaxy_40000.txt
+
